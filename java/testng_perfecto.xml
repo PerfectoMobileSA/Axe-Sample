@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ADA Suite" parallel="tests" preserve-order="false"
+	thread-count="10">
+	<test name="Windows Web ADA test with AXE" enabled="true">
+		<parameter name="platform" value="Windows"></parameter>
+		<classes>
+			<class name="ps.WebADA_Axe" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Safari Web ADA test with AXE" enabled="true">
+		<parameter name="platform" value="iOS"></parameter>
+		<classes>
+			<class name="ps.WebADA_Axe" />
+		</classes>
+	</test>
+</suite>
